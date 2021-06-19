@@ -7,6 +7,8 @@ metadata:
     annotation1: annotation
     annotation2: test
     annotation3: "1"
+  labels:
+    app: sample-app
 spec:
   replicas: 3
   selector:
