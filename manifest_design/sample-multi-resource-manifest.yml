@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   name: order1-deployment
 spec:
-  replicas:3
+  replicas: 3
   selector:
     matchLabels:
       app: sample-app
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: nginx-container
-        image: nginx: 1. 1
+        image: nginx:1.16
 ---
 apiVersion:v1
 kind: Service
