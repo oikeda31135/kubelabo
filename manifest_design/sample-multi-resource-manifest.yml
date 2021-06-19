@@ -3,6 +3,10 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: order1-deployment
+  annotations:
+    annotation1: annotation
+    annotation2: test
+    annotation3: "1"
 spec:
   replicas: 3
   selector:
