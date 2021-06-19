@@ -8,10 +8,10 @@ metadata:
 spec:
   containers:
   - name: nginx-container
-  image: amsy810/echo-nginx:v2.0
-  ports:
-  - name: http
-    containerPort: 80
+    image: amsy810/echo-nginx:v2.0
+    ports:
+    - name: http
+      containerPort: 80
 
 ---
 apiVersion: v1
@@ -23,11 +23,11 @@ metadata:
 spec:
   containers:
   - name: nginx-container
-  image: amsy810/echo-nginx:v2.0
-  env:
-  - name: NGINX_PORT
-    value: "81"
-  ports:
-  - name: http
-    containerPort: 81
+    image: amsy810/echo-nginx:v2.0
+    env:
+    - name: NGINX_PORT
+      value: "81"
+    ports:
+    - name: http
+      containerPort: 81
 
